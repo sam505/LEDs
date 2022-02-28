@@ -1,0 +1,189 @@
+
+(session LEDs.ses
+  (base_design LEDs.dsn)
+  (placement
+    (resolution um 10)
+    (component MountingHole:MountingHole_2.5mm
+      (place H3 1380000 -1040000 front 0)
+      (place H2 1520000 -750000 front 0)
+      (place H4 1520000 -1040000 front 0)
+      (place H1 1380000 -750000 front 0)
+    )
+    (component Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal
+      (place R2 1450000 -995400 front 90)
+    )
+    (component LED_THT:LED_D3.0mm
+      (place D3 1460000 -880000 front 180)
+    )
+    (component Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal::1
+      (place R1 1420000 -995400 front 90)
+    )
+    (component LED_THT:LED_D3.0mm::1
+      (place D1 1458600 -761400 front 180)
+    )
+    (component Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal::2
+      (place R3 1480000 -995400 front 90)
+    )
+    (component LED_THT:LED_D3.0mm::2
+      (place D2 1460000 -820000 front 180)
+    )
+    (component Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal
+      (place J1 1410000 -1083200 back 90)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "6.0.2-378541a8eb~116~ubuntu20.04.1")
+    )
+    (library_out 
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net "Net-(D1-Pad1)"
+        (wire
+          (path F.Cu 2500
+            1410000 -1083200
+            1410000 -1071447
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1460000 -880000
+            1460000 -919746
+            1409469 -970277
+            1409469 -1070916
+            1410000 -1071447
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1460000 -820000
+            1460000 -880000
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1458600 -818600
+            1460000 -820000
+          )
+          (type protect)
+        )
+        (wire
+          (path F.Cu 2500
+            1458600 -818600
+            1458600 -761400
+          )
+        )
+      )
+      (net "Net-(D1-Pad2)"
+        (wire
+          (path F.Cu 2500
+            1416500 -941100
+            1416500 -778100
+            1433200 -761400
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1416500 -941100
+            1420000 -944600
+          )
+          (type protect)
+        )
+        (wire
+          (path F.Cu 2500
+            1413000 -937600
+            1416500 -941100
+          )
+          (type protect)
+        )
+      )
+      (net "Net-(D2-Pad2)"
+        (wire
+          (path B.Cu 2500
+            1450000 -944600
+            1450000 -934347
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1434600 -820000
+            1447746 -833146
+            1447746 -932093
+            1450000 -934347
+          )
+        )
+      )
+      (net "Net-(D3-Pad2)"
+        (wire
+          (path B.Cu 2500
+            1480000 -944600
+            1469747 -944600
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1469747 -944600
+            1459408 -954939
+            1445616 -954939
+            1434600 -943923
+            1434600 -880000
+          )
+        )
+      )
+      (net "Net-(J1-Pad2)"
+        (wire
+          (path F.Cu 2500
+            1435400 -1083200
+            1435400 -1010800
+            1420000 -995400
+          )
+        )
+      )
+      (net "Net-(J1-Pad3)"
+        (wire
+          (path F.Cu 2500
+            1460800 -1083200
+            1460800 -1006200
+            1450000 -995400
+          )
+        )
+      )
+      (net "Net-(J1-Pad4)"
+        (wire
+          (path F.Cu 2500
+            1483100 -1080100
+            1483100 -998500
+            1480000 -995400
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1483100 -1080100
+            1486200 -1083200
+          )
+          (type protect)
+        )
+        (wire
+          (path F.Cu 2500
+            1480000 -1077000
+            1483100 -1080100
+          )
+          (type protect)
+        )
+      )
+    )
+  )
+)
